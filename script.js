@@ -3,7 +3,7 @@ const WHATSAPP_NUMBER = "5511954561026";
 
 // ---- Wire up every WhatsApp CTA with a prefilled message ----
 document.querySelectorAll("[data-whatsapp-link]").forEach((el) => {
-  const text = el.getAttribute("data-whatsapp-text") || "Olá! Vi o anúncio dos apartamentos na Vila Rio.";
+  const text = el.getAttribute("data-whatsapp-text") || "Olá! Vi o anúncio dos apartamentos no Portal dos Gramados.";
   el.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
 });
 
